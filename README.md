@@ -1,17 +1,9 @@
-# Programming-Assignment-2-Lexical-Scoping
+## Programming-Assignment-2-Lexical-Scoping
 Coursera
 
-#Assignment: Caching the Inverse of a Matrix
-
-#solution
-#functions
-#cachematrix.R
-#Caching the Inverse of a Matrix:
-#Below are a pair of functions that are used to create a special object that stores a matrix and caches its inverse.
-#This function creates a special "matrix" object that can cache its inverse.
-
+##Assignment: Caching the Inverse of a Matrix
 makeCacheMatrix <- function(x = matrix()) {
-#initially there is nothing to cache so set it to NULL
+##initially there is nothing to cache so set it to NULL
         inv <- NULL
         #storing a matrix
         set <- function(y) {
@@ -26,10 +18,6 @@ makeCacheMatrix <- function(x = matrix()) {
              setInverse = setInverse,
              getInverse = getInverse)
 }
-
-
-#This function computes the inverse of the special "matrix" created by makeCacheMatrix above. 
-#If the inverse has already been calculated (and the matrix has not changed), then it should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
         #Return a matrix that is the inverse of 'x'
